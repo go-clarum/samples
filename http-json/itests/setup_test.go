@@ -1,18 +1,19 @@
 package itests
 
 import (
+	"fmt"
 	clarumcore "github.com/goclarum/clarum/core"
 	"github.com/goclarum/clarum/core/orchestration/command"
 	clarumhttp "github.com/goclarum/clarum/http"
-	"github.com/gofiber/fiber/v2/log"
+	"log/slog"
 	"os"
 	"testing"
 	"time"
 )
 
 var appInstance = command.Command().
-	Components("go", "run", "../main.go").
-	Warmup(3 * time.Second).
+	Components("go", "run", "../src/main.go").
+	Warmup(1 * time.Second).
 	Build()
 
 var apiClient = clarumhttp.Http().Client().
@@ -25,7 +26,7 @@ func TestMain(m *testing.M) {
 	clarumcore.Setup()
 
 	if err := appInstance.Run(); err != nil {
-		log.Errorf("Test suite did not start because of startup error - %s", err)
+		slog.Error(fmt.Sprintf("Test suite did not start because of startup error - %s", err))
 		return
 	}
 
@@ -33,7 +34,7 @@ func TestMain(m *testing.M) {
 
 	clarumcore.Finish()
 	if err := appInstance.Stop(); err != nil {
-		log.Errorf("Test suite ended with shutdown error  - %s", err)
+		slog.Error(fmt.Sprintf("Test suite ended with shutdown error  - %s", err))
 
 	}
 
