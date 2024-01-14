@@ -32,11 +32,10 @@ func TestMain(m *testing.M) {
 
 	result := m.Run()
 
-	clarumcore.Finish()
 	if err := appInstance.Stop(); err != nil {
 		slog.Error(fmt.Sprintf("Test suite ended with shutdown error  - %s", err))
-
 	}
+	clarumcore.Finish()
 
 	os.Exit(result)
 }
