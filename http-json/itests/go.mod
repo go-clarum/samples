@@ -3,13 +3,10 @@ module github.com/go-clarum/clarum-samples/http-json
 go 1.21.5
 
 require (
-	github.com/goclarum/clarum/core v0.0.0
-	github.com/goclarum/clarum/http v0.0.0
-)
-
-require (
-	github.com/andybalholm/brotli v1.0.5 // indirect
+    github.com/go-clarum/clarum-core v0.1.0
+	github.com/go-clarum/clarum-http v0.1.0
 	github.com/go-clarum/clarum-json v1.0.0 // indirect
+	github.com/andybalholm/brotli v1.0.5 // indirect
 	github.com/gofiber/fiber/v2 v2.52.0 // indirect
 	github.com/google/uuid v1.5.0 // indirect
 	github.com/klauspost/compress v1.17.0 // indirect
@@ -23,7 +20,3 @@ require (
 	golang.org/x/sys v0.15.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
-
-replace github.com/goclarum/clarum/core => ../../../clarum-core
-
-replace github.com/goclarum/clarum/http => ../../../clarum-http

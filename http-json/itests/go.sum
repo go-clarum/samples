@@ -1,7 +1,11 @@
-github.com/andybalholm/brotli v1.0.5 h1:8uQZIdzKmjc/iuPu7O2ioW48L81FgatrcpfFmiq/cCs=
-github.com/andybalholm/brotli v1.0.5/go.mod h1:fO7iG3H7G2nSZ7m0zPUDn85XEX2GTukHGRSepvi9Eig=
+github.com/go-clarum/clarum-core v0.1.0 h1:GkXUn5U2JaUlIi/ojkgexPXcXwhfzwefs5klmn4P1q0=
+github.com/go-clarum/clarum-core v0.1.0/go.mod h1:L1guRHi+CrM6CE2PNr2raAvfVPzJSR6VaEyC1a3bP1o=
+github.com/go-clarum/clarum-http v0.1.0 h1:caGzeCr8AsVu0NGsRX7huENYWB2tA9zRq3hbx2D3Ysg=
+github.com/go-clarum/clarum-http v0.1.0/go.mod h1:cRj1OnF3fQkU4Dmg120BVzmbyNPOB1LuN5Po/5zDNw4=
 github.com/go-clarum/clarum-json v1.0.0 h1:HFnhhzDjT4et/X/ricK7pXDPhtsZSEpORuSPKUiFrCY=
 github.com/go-clarum/clarum-json v1.0.0/go.mod h1:SZi2GKhcHUUCN0g2njGi9vrgr1+8gLwEjhMAiNZao1s=
+github.com/andybalholm/brotli v1.0.5 h1:8uQZIdzKmjc/iuPu7O2ioW48L81FgatrcpfFmiq/cCs=
+github.com/andybalholm/brotli v1.0.5/go.mod h1:fO7iG3H7G2nSZ7m0zPUDn85XEX2GTukHGRSepvi9Eig=
 github.com/gofiber/fiber/v2 v2.52.0 h1:S+qXi7y+/Pgvqq4DrSmREGiFwtB7Bu6+QFLuIHYw/UE=
 github.com/gofiber/fiber/v2 v2.52.0/go.mod h1:KEOE+cXMhXG0zHc9d8+E38hoX+ZN7bhOtgeF2oT6jrQ=
 github.com/google/uuid v1.5.0 h1:1p67kYwdtXjb0gL0BPiP1Av9wiZPo5A8z2cWkTZ+eyU=
